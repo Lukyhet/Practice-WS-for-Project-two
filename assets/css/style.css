@@ -1,63 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Scada:wght@700&display=swap');
 
 body {
-    font-weight: 600;
+    margin: 0;
     font-size: 20px;
-    font-family: Lato, sans-serif;
-    background-color: white;
-    color: #05263B;
+    font-family: 'Scada', sans-serif;
+    font-weight: 600;
+    background-color: black;
 }
 
-/* Heading */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
 
 .heading {
-    text-align: center;
     font-size: 50px;
+    color: white;
+    text-align: center;
 }
 
-.logo {
-    height: 50px;
-    padding-right: 5px;
-}
-
-/* Trivia layout */
-
-.custom-box {
-    background-color: rgb(255, 255, 161);
-    max-width: 650px;
-    border-radius: 7px;
+.main-box {
+    max-width: 750px;
+    background-color: red ;
     margin: 50px auto;
-    padding: 20px;
-    }
+    padding: 25px;
+    border-radius: 10px;
+}
 
-.custom-box::before,
-.custom-box::after{
+.main-box::before,
+.main-box::after{
     content: '';
     clear: both;
     display: table;
 }
 
-.custom-box.hide{
+.main-box.hide{
     display: none;
 }
 
 .home-box h3{
     font-size: medium;
-    color: #05263B;
+    color: white;
     font-weight: 500;
     margin-bottom: 20px;
     line-height: 25px;
 }
 
 .home-box p{
-
+    font-size: large;
     margin-bottom: 10px;
     line-height: 25px;
-    color: #05263B;
+    color: white;
     font-weight: 500;
 }
-
 
 .home-box p span{
     font-weight: 500;
@@ -69,11 +66,12 @@ body {
 
 .btn{
     padding: 20px 20px;
-    background-color: #43B0F1;
+    background-color: black;
     color: white;
     border: none;
     border-radius: 5px;
     font-size: large;
+    font-family: 'Scada', sans-serif;
     cursor: pointer;
     display: inline-block;
 
@@ -106,15 +104,15 @@ body {
     cursor: pointer;
 }
 
-.quiz-box .btn{
+.quiz-area .btn{
     margin: 15px 0;
 }
 
-.quiz-box .answers-indicator{
+.quiz-area .answers-indicator{
     border-top: 1px solid white;
 }
 
-.quiz-box .answers-indicator div{
+.quiz-area .answers-indicator div{
     height: 25px;
     width: 25px;
     display: inline-block;
@@ -124,11 +122,11 @@ body {
     margin-top: 10px;
 }
 
-.quiz-box .score-area {
+.quiz-area .score-area {
     padding-top: 10px;
 }
 
-.quiz-box .score-area .incorrect {
+.quiz-area .score-area .incorrect {
     float: right
 }
 

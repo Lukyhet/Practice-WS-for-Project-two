@@ -4,30 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A fun movie quiz for movie lovers">
-    <meta name="keywords" content="quiz, trivia, movies, score, movie lovers">
 
-    <!--fontawesome and Google fonts-->
-    
-    
+
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Movie Trivia</title>
+    
+    <title>Marvel Quiz</title>
 </head>
-
 <body>
-    <h1 class="heading">
-        <img class="logo" src="assets/images/palomitas-de-maiz (1).png" alt="logo"> Movie Trivia!
-    </h1>
+    <h1 class="heading"> <img class="logo" src="assets/images/palomitas-de-maiz (1).png" alt="logo"> Movie Trivia!</h1>
 
-    <div class ="home-box custom-box" id="home-box">
+    <div class ="home-box main-box" id="home-box">
         <h2>Ready?</h2>
     
-        <p>Questions: <span class="total-question">20</span></p>
-        <p>Select the correct answer.</p>
+        <p>Questions: <span class="questions">20</span></p>
+        <p>Simply answer each question by clicking on 1 of the 4 answers.</p>
+        <p>There is 1 point for each correct answer.</p>
         <button id="button" class="btn">Start Quiz</button>
     </div>
 
-    <div class="quiz-box custom-box hidden-content" id="question-holder">
+    <div class="quiz-area main-box hidden-content" id="question-area">
         <div class="question-number" id="question-number">
         </div>
 
@@ -52,12 +47,12 @@
 
     
     
-    <div class="result-box custom-box hidden-content" id="result-box">
+    <div class="result-box main-box hidden-content" id="result-box">
         <h1>Quiz Result</h1>
         <table style="width:100%">
             <tr>
-                <th class="results">Total Questions</th>
-                <td><span class="total-questions" id="total-questions">20</span></td>
+                <th class="results">Questions</th>
+                <td><span class="questions" id="questions">20</span></td>
             </tr>
             <tr>
                 <th class="results">Correct Answers</th>
@@ -68,15 +63,13 @@
                 <td><span class="total-incorrect" id="total-incorrect"></span></td>
             </tr>
         </table>
-        <p class="comment" id="comment1">18-20: Great! Have you consider a job in the movie industry?</p>
-        <p class="comment" id="comment2">11-17: Good! Pop your corn and learn more while enjoying a movie!</p>
-        <p class="comment" id="comment3">5-10: Meh...We know you can do better!</p>
-        <p class="comment" id="comment4">0-4: Nahh! Are you kidding?</p>
-        <button type="button" class="btn" id="again">Try Again</button>
+        <p class="comment" id="comment1">16-20: Awesome! Pack your bags Nick Fury is ready to recruit you for S.H.I.E.L.D.</p>
+        <p class="comment" id="comment2">11-15: Average.  Not bad but I don't think Tony Stark would be too impressed.</p>
+        <p class="comment" id="comment3">6-10: Below Average.  You need some training, Professor X is headed to your place.</p>
+        <p class="comment" id="comment4">0-5: Poor.  Clear your schedule for research, we're calling Dr Doom to help you.</p>
+        <button type="button" class="btn" id="try-again">Try Again</button>
     </div>
 
-</body>
     <script src="assets/js/script.js"></script>
-
 </body>
 </html>
