@@ -1,29 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Scada:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
 
 body {
     margin: 0;
     font-size: 20px;
-    font-family: 'Scada', sans-serif;
-    font-weight: 600;
-    background-color: black;
+    font-family: 'Lato', sans-serif;
 }
 
 *{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
     outline: none;
+    padding: 0;
+    text-align: center;
+    
 }
 
 .heading {
     font-size: 50px;
-    color: white;
+    color: #05263B;
     text-align: center;
 }
 
 .main-box {
     max-width: 750px;
-    background-color: red ;
+    background-color: rgb(255, 255, 161);
     margin: 50px auto;
     padding: 25px;
     border-radius: 10px;
@@ -42,7 +41,7 @@ body {
 
 .home-box h3{
     font-size: medium;
-    color: white;
+    color: #05263B;
     font-weight: 500;
     margin-bottom: 20px;
     line-height: 25px;
@@ -52,7 +51,7 @@ body {
     font-size: large;
     margin-bottom: 10px;
     line-height: 25px;
-    color: white;
+    color: #05263B;
     font-weight: 500;
 }
 
@@ -66,12 +65,12 @@ body {
 
 .btn{
     padding: 20px 20px;
-    background-color: black;
-    color: white;
+    background-color: #87cefa;
+    color: #05263B;
     border: none;
     border-radius: 5px;
     font-size: large;
-    font-family: 'Scada', sans-serif;
+    font-family: 'Lato', sans-serif;
     cursor: pointer;
     display: inline-block;
 
@@ -79,7 +78,7 @@ body {
 
 .quiz-box .question-number{
     font-size: 20px;
-    color: black;
+    color: #05263B;
     font-weight: 600;
     border-bottom: 1px solid white;
     padding-bottom: 10px;
@@ -96,7 +95,7 @@ body {
 
 .quiz-box .option-container .option{
     background-color: white;
-    padding: 15px;
+    padding: 30px;
     font-size: 16px;
     color: black;
     border-radius: 5px;
@@ -126,14 +125,6 @@ body {
     padding-top: 10px;
 }
 
-.quiz-area .score-area .incorrect {
-    float: right
-}
-
-.scores {
-    display: inline;
-}
-
 .result-box{
     text-align: center;
 }
@@ -145,7 +136,7 @@ body {
 .result-box h1 {
     font-size: 36px;
     line-height: 40px;
-    color: white;
+    color: #05263B;
     
 }
 
@@ -159,7 +150,7 @@ body {
     border: 1px solid white;
     padding: 10px 20px;
     font-weight: 500;
-    color: black;
+    color: #05263B;
     width: 50%;
     text-align: left;
     font-size: 20px;
@@ -184,4 +175,5 @@ body {
     font-size: 18px;
     text-align: left;
     padding: 5px;
+    color: #05263B;
 }

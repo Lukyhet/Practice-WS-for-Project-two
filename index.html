@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,18 +8,18 @@
 
 
     <link rel="stylesheet" href="assets/css/style.css">
-    
-    <title>Marvel Quiz</title>
+
+    <title>Movie Trivia</title>
 </head>
+
 <body>
     <h1 class="heading"> <img class="logo" src="assets/images/palomitas-de-maiz (1).png" alt="logo"> Movie Trivia!</h1>
 
-    <div class ="home-box main-box" id="home-box">
+    <div class="home-box main-box" id="home-box">
         <h2>Ready?</h2>
-    
-        <p>Questions: <span class="questions">20</span></p>
-        <p>Simply answer each question by clicking on 1 of the 4 answers.</p>
-        <p>There is 1 point for each correct answer.</p>
+
+        <p>Questions: <span class="questions">16</span></p>
+        <p>Click the correct answer.</p>
         <button id="button" class="btn">Start Quiz</button>
     </div>
 
@@ -26,9 +27,9 @@
         <div class="question-number" id="question-number">
         </div>
 
-        <div class ="question-text" id="question-text">
+        <div class="question-text" id="question-text">
         </div>
-    
+
         <div class="option-container" id="option-container">
             <button type="button" class="btn answer" name="answer" id="answer1"></button>
             <button type="button" class="btn answer" name="answer" id="answer2"></button>
@@ -43,10 +44,10 @@
             <p class="scores">Correct Answers <span id="score">0</span></p>
             <p class="scores incorrect">Incorrect Answers <span id="incorrect-score">0</span></p>
         </div>
-    </div> 
+    </div>
 
-    
-    
+
+
     <div class="result-box main-box hidden-content" id="result-box">
         <h1>Quiz Result</h1>
         <table style="width:100%">
@@ -63,13 +64,18 @@
                 <td><span class="total-incorrect" id="total-incorrect"></span></td>
             </tr>
         </table>
-        <p class="comment" id="comment1">16-20: Awesome! Pack your bags Nick Fury is ready to recruit you for S.H.I.E.L.D.</p>
-        <p class="comment" id="comment2">11-15: Average.  Not bad but I don't think Tony Stark would be too impressed.</p>
-        <p class="comment" id="comment3">6-10: Below Average.  You need some training, Professor X is headed to your place.</p>
-        <p class="comment" id="comment4">0-5: Poor.  Clear your schedule for research, we're calling Dr Doom to help you.</p>
+        <p class="comment" id="comment1">16-20: Awesome! Pack your bags Nick Fury is ready to recruit you for
+            S.H.I.E.L.D.</p>
+        <p class="comment" id="comment2">11-15: Average. Not bad but I don't think Tony Stark would be too impressed.
+        </p>
+        <p class="comment" id="comment3">6-10: Below Average. You need some training, Professor X is headed to your
+            place.</p>
+        <p class="comment" id="comment4">0-5: Poor. Clear your schedule for research, we're calling Dr Doom to help you.
+        </p>
         <button type="button" class="btn" id="try-again">Try Again</button>
     </div>
 
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
