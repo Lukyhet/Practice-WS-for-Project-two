@@ -1,24 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
 
+
+/* Global style */
+
 body {
     margin: 0;
     font-size: 20px;
     font-family: 'Lato', sans-serif;
 }
 
-*{
+* {
     box-sizing: border-box;
     outline: none;
     padding: 0;
     text-align: center;
-    
 }
 
+/* Heading */
+
 .heading {
-    font-size: 50px;
     color: #05263B;
     text-align: center;
+    font-size: 50px;
 }
+
+.logo {
+    height: 63px;
+    padding-right: 2px;
+}
+
+/* Timer */
+
+.timer {
+    color: #05263B;
+    text-align: right;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+/* Trivia layout */
 
 .main-box {
     max-width: 750px;
@@ -29,17 +49,17 @@ body {
 }
 
 .main-box::before,
-.main-box::after{
+.main-box::after {
     content: '';
     clear: both;
     display: table;
 }
 
-.main-box.hide{
+.main-box.hide {
     display: none;
 }
 
-.home-box h3{
+.home-area h3 {
     font-size: medium;
     color: #05263B;
     font-weight: 500;
@@ -47,7 +67,7 @@ body {
     line-height: 25px;
 }
 
-.home-box p{
+.home-area p {
     font-size: large;
     margin-bottom: 10px;
     line-height: 25px;
@@ -55,15 +75,15 @@ body {
     font-weight: 500;
 }
 
-.home-box p span{
+.home-area p span {
     font-weight: 500;
 }
 
-.home-box .btn{
+.home-area .btn {
     margin-top: 20px;
 }
 
-.btn{
+.btn {
     padding: 20px 20px;
     background-color: #87cefa;
     color: #05263B;
@@ -73,10 +93,18 @@ body {
     font-family: 'Lato', sans-serif;
     cursor: pointer;
     display: inline-block;
-
 }
 
-.quiz-box .question-number{
+.btn:active {
+
+    transform: scale(0.8);
+    transform: translateY(4px);
+    box-shadow: 0 0 10px #05263B;
+}
+
+/*trivia style*/
+
+.trivia-area .question-number {
     font-size: 20px;
     color: #05263B;
     font-weight: 600;
@@ -85,7 +113,7 @@ body {
     line-height: 25px;
 }
 
-.quiz-box .question-text{
+.trivia-area .question-text {
     font-size: 20px;
     color: #05263B;
     line-height: 30px;
@@ -94,7 +122,7 @@ body {
     margin: 0;
 }
 
-.quiz-box .option-container .option{
+.trivia-area .option-container .option {
     background-color: white;
     padding: 30px;
     font-size: 16px;
@@ -104,13 +132,15 @@ body {
     cursor: pointer;
 }
 
-.quiz-area .btn{
+.trivia-area .btn {
     margin: 15px 0;
 }
 
+.trivia-area .answers-indicator {
+    border-top: 1px solid #87cefa;
+}
 
-
-.quiz-area .answers-indicator div{
+.trivia-area .answers-indicator div {
     height: 25px;
     width: 25px;
     display: inline-block;
@@ -120,33 +150,36 @@ body {
     margin-top: 10px;
 }
 
-.quiz-area .score-area {
+.trivia-area .score-area {
     padding-top: 10px;
     color: #05263B;
 }
 
-.result-box{
+/*Results layout*/
+
+.result-area {
     text-align: center;
 }
 
-.result-box hide{
+.result-area hide {
     display: none;
 }
 
-.result-box h1 {
+.result-area h1 {
     font-size: 36px;
     line-height: 40px;
     color: #05263B;
-    
+
 }
 
-.result-box table {
+.result-area table {
     width: 100%;
     border-collapse: collapse;
     margin: 30px 0;
 }
 
-.result-box table td, .result-box table th {
+.result-area table td,
+.result-area table th {
     border: 1px solid #87cefa;
     padding: 14px 24px;
     font-weight: 500;
@@ -154,24 +187,24 @@ body {
     width: 40%;
 }
 
-.result-box .btn {
+.result-area .btn {
     margin-right: 20px;
     margin-top: 20px;
 }
 
 .results {
     text-align: left;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
-
-.hidden-content{
+.hidden-content {
     display: none;
 }
 
-.comment{
+/*Comments style*/
+
+.comment {
     font-size: 18px;
-    text-align: left;
     padding: 5px;
     color: #05263B;
 }

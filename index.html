@@ -5,25 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A fun movie trivia for movie lovers">
+    <meta name="keywords" content="trivia, trivia, movies, score, movie lovers">
 
+    <!--fontawesome and Google fonts-->
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-
     <title>Movie Trivia</title>
 </head>
 
 <body>
-    <h1 class="heading"> <img class="logo" src="assets/images/palomitas-de-maiz (1).png" alt="logo"> Movie Trivia!</h1>
+    <h1 class="heading">
+        <img class="logo" src="assets/images/palomitas-de-maiz3.png" alt="logo"> Movie Trivia!
+    </h1>
 
-    <div class="home-box main-box" id="home-box">
+    <div class="home-area main-box" id="home-area">
         <h2>Ready?</h2>
 
         <p>Questions: <span class="questions">16</span></p>
-        <p>Click the correct answer.</p>
-        <button id="button" class="btn">Start Quiz</button>
+        <p>Click the correct answer</p>
+        <button id="button" class="btn">Start trivia</button>
     </div>
 
-    <div class="quiz-area main-box hidden-content" id="question-area">
+    <div class="trivia-area main-box hidden-content" id="question-area">
+
+        <div class="timer" id="timer-counter">
+            0 Seconds</div>
+
         <div class="question-number" id="question-number">
         </div>
 
@@ -38,8 +48,6 @@
 
         </div>
 
-        <div class="answers-indicator">
-        </div>
         <div class="score-area">
             <p class="scores">Correct Answers <span id="score">0</span></p>
             <p class="scores incorrect">Incorrect Answers <span id="incorrect-score">0</span></p>
@@ -48,12 +56,12 @@
 
 
 
-    <div class="result-box main-box hidden-content" id="result-box">
-        <h1>Quiz Result</h1>
+    <div class="result-area main-box hidden-content" id="result-area">
+        <h1>Trivia Results</h1>
         <table style="width:100%">
             <tr>
-                <th class="results">Questions</th>
-                <td><span class="questions" id="questions">20</span></td>
+                <th class="results">Total Questions</th>
+                <td><span class="questions" id="questions">16</span></td>
             </tr>
             <tr>
                 <th class="results">Correct Answers</th>
@@ -63,19 +71,25 @@
                 <th class="results">Incorrect Answers</th>
                 <td><span class="total-incorrect" id="total-incorrect"></span></td>
             </tr>
+            <tr>
+                <th class="results">Total Time</th>
+                <td><span class="total-correct" id="total-time"></span></td>
+            </tr>
         </table>
-        <p class="comment" id="comment1">16-20: Awesome! Pack your bags Nick Fury is ready to recruit you for
-            S.H.I.E.L.D.</p>
-        <p class="comment" id="comment2">11-15: Average. Not bad but I don't think Tony Stark would be too impressed.
-        </p>
-        <p class="comment" id="comment3">6-10: Below Average. You need some training, Professor X is headed to your
-            place.</p>
-        <p class="comment" id="comment4">0-5: Poor. Clear your schedule for research, we're calling Dr Doom to help you.
-        </p>
+
+        <p class="comment hidden-content" id="comment1">14-16: Great! Have you consider a job in the movie industry?</p>
+        <p class="comment hidden-content" id="comment2">11-14: Good! Keep up with the good movie fandom!</p>
+        <p class="comment hidden-content" id="comment3">5-10: Average, get your popcorn ready and learn a bit more
+            while enjoying a movie!</p>
+        <p class="comment hidden-content" id="comment4">0-4: Booo...We know you can do better!</p>
         <button type="button" class="btn" id="try-again">Try Again</button>
+
     </div>
 
-    <script src="assets/js/script.js"></script>
+
+</body>
+<script src="assets/js/script.js"></script>
+
 </body>
 
 </html>
